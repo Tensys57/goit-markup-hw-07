@@ -1,4 +1,4 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -38,6 +38,15 @@ s<!DOCTYPE html>
             </li>
           </ul>
         </nav>
+        <button
+          type="button"
+          class="mobile-menu-open-button aria-expanded"
+          .js-open-menu
+        >
+          <svg class="burger-menu-icon">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
         <address>
           <ul class="contacts-nav">
             <li class="item">
@@ -57,17 +66,17 @@ s<!DOCTYPE html>
     <!-- Main Page -->
     <main>
       <!-------------------- Hero Section -------------->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!------------- Features of the company ------------>
-      <section class="section features">
+      <!-- <section class="section features">
         <div class="container">
           <h2 class="section-title visually-hidden">Our Features</h2>
           <ul class="feature-list">
@@ -121,10 +130,10 @@ s<!DOCTYPE html>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!------------------- Products ------------------->
-      <section class="section products-list">
+      <!-- <section class="section products-list">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="products-list">
@@ -151,10 +160,10 @@ s<!DOCTYPE html>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!------------------- Our Team --------------->
-      <section class="section team">
+      <!-- <section class="section team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
@@ -331,8 +340,8 @@ s<!DOCTYPE html>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section customers container">
+      </section> -->
+      <!-- <section class="section customers container">
         <h2 class="section-title">Customers</h2>
         <ul class="customers-list">
           <li class="customers-list-items">
@@ -408,10 +417,10 @@ s<!DOCTYPE html>
             </a>
           </li>
         </ul>
-      </section>
+      </section> -->
     </main>
     <!-- ------------------- Footer ------------------- -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <ul class="footer-list">
           <li class="footer-list-item">
@@ -499,7 +508,7 @@ s<!DOCTYPE html>
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
     <!-- ---------- Backdrop -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -585,6 +594,15 @@ s<!DOCTYPE html>
         </form>
       </div>
     </div>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu is-hidden" .js-menu-container>
+      <button class="mobile-menu-close-button" .js-close-menu>
+        <svg class="mobile-menu-close-icon">
+          <use href="./images/icons.svg#close-black-18dp"></use>
+        </svg>
+      </button>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
