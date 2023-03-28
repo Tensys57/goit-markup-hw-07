@@ -120,13 +120,14 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0 18px 0;
+  padding: 24px 0 22px 0;
 }
 
 @media screen and (min-width: 768px) {
   .page-header {
     background-color: var(--primary-bg-color);
     border-bottom: 1px solid var(--secondary-bg-colour);
+    padding: 24px 0 24px 0;
   }
 }
 
@@ -253,11 +254,12 @@ address {
   margin-left: auto;
 }
 
-/* @media screen and ((min-width: 768px),(max-width: 1200px)) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contacts-nav {
     flex-direction: column;
+    align-items: flex-end;
   }
-} */
+}
 
 .contacts-nav .item + .item {
   margin-left: 40px;
@@ -372,6 +374,18 @@ address {
   padding: 188px 0;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/mobile/hero-bg-mobile@2x.jpg");
+  }
+}
+
 @media screen and (max-width: 480px) {
   .hero {
     background-image: linear-gradient(
@@ -436,11 +450,32 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/people-office@2x.jpg");
+    }
+  }
+}
+
 .hero-title {
   color: var(--primary-bg-color);
   font-size: 56px;
   line-height: 1.07;
-  width: 496px;
+  width: 100%;
   margin: 0 auto 48px;
 }
 
@@ -743,7 +778,7 @@ address {
 
 .declaration {
   color: var(--primary-bg-color);
-  width: 268px;
+  width: 100%;
   margin-top: 16px;
   margin-bottom: 72px;
   text-align: center;
@@ -751,7 +786,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .declaration {
-    width: 264px;
+    /* width: 264px; */
     margin-top: 0;
     margin-bottom: 0px;
     text-align: left;
@@ -760,10 +795,8 @@ address {
 
 @media screen and (min-width: 1200px) {
   .declaration {
-    width: 264px;
+    /* width: 264px; */
     margin-top: 16px;
-    margin-bottom: 0;
-    text-align: left;
   }
 }
 
@@ -854,7 +887,7 @@ address {
 }
 
 .footer-subscribe-label {
-  width: 264px;
+  width: 100%;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -882,13 +915,12 @@ address {
   color: white;
 }
 
-.footer-button-wrapper {
+/* .footer-button-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
-}
+} */
 @media screen and (min-width: 768px) {
   .footer-button-wrapper {
     align-items: flex-end;
@@ -904,14 +936,16 @@ address {
 }
 
 .footer-subscribe-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
   height: 40px;
-  padding: 8px 24px 8px 24px;
   background-color: var(--normal-button-color);
   color: var(--primary-bg-color);
   border-radius: 4px;
+  padding: 8px 24px 8px 24px;
+  margin-top: 16px;
 }
 
 .footer-send-icon {
