@@ -101,6 +101,7 @@ address {
 .section {
   padding: 96px 0;
 }
+
 @media screen and (min-width: 768px) {
   .section {
     padding: 126px 0 96px 0;
@@ -126,12 +127,6 @@ address {
   .page-header {
     background-color: var(--primary-bg-color);
     border-bottom: 1px solid var(--secondary-bg-colour);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-header {
-    /* background-color: var(--primary-bg-color); */
   }
 }
 
@@ -258,6 +253,14 @@ address {
   margin-left: auto;
 }
 
+/* @media screen and ((min-width: 768px),(max-width: 1200px)) {
+  .contacts-nav {
+    flex-direction: column;
+  }
+} */
+
+
+
 .contacts-nav .item + .item {
   margin-left: 40px;
 }
@@ -371,57 +374,26 @@ address {
   padding: 188px 0;
 }
 
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/people-office-mobile@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 481px) {
-  .hero {
-    background-image: url("../images/people-office-tablet.jpg");
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: url("../images/people-office-tablet@2x.jpg");
-    }
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .hero {
-    background-image: url("../images/people-office.jpg");
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: url("../images/people-office@2x.jpg");
-    }
-  }
-}
-
 @media screen and (max-width: 480px) {
   .hero {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-      url("../images/people-office-mobile.jpg;
+      url("../images/people-office-mobile.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url("../images/people-office-mobile@2x.jpg");
+      background-image:  linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url("../images/people-office-mobile@2x.jpg");
     }
   }
 }
+
 @media screen and (min-width: 481px) {
   .hero {
     max-width: 768px;
@@ -435,39 +407,32 @@ address {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url("../images/people-office-tablet@2x.jpg");
+      background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url("../images/people-office-tablet@2x.jpg");
     }
   }
 }
+
 @media screen and (min-width: 769px) {
   .hero {
-    padding-top: 272px;
-    padding-bottom: 273px;
-    background-image: url("../images/people-office.jpg");
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url("../images/people-office.jpg");
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url("../images/people-office@2x.jpg");
+      background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url("../images/people-office@2x.jpg");
     }
   }
 }
-
-@media screen and (min-width: 769px) {
-  .hero {
-    padding-top: 272px;
-    padding-bottom: 273px;
-    background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-      url("../images/people-office.jpg");
-  }
-}
-
-
-
 
 .hero-title {
   color: var(--primary-bg-color);
@@ -1218,13 +1183,12 @@ address {
   cursor: pointer;
 }
 
- .modal-checkbox-agreement:checked + .modal-checkbox-label::before {
+.modal-checkbox-agreement:checked + .modal-checkbox-label::before {
   background-color: var(--hover-button-bg);
   background-image: url("../images/icon-check.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-} 
-
+}
 
 .modal-checkbox-agreement:focus + .modal-checkbox-label::before {
   border-color: var(--normal-button-color);
