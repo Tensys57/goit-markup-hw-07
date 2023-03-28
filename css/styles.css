@@ -120,14 +120,12 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0 22px 0;
 }
 
 @media screen and (min-width: 768px) {
   .page-header {
     background-color: var(--primary-bg-color);
     border-bottom: 1px solid var(--secondary-bg-colour);
-    padding: 24px 0 24px 0;
   }
 }
 
@@ -226,17 +224,10 @@ address {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  address {
-    display: block;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   address {
     display: flex;
     gap: 24px;
-    padding-bottom: 32px;
   }
 }
 
