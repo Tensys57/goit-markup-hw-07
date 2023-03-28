@@ -233,9 +233,11 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
-  display: flex;
-  gap: 24px;
-  padding-bottom: 32px;
+  address {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 32px;
+  }
 }
 
 .contact {
@@ -248,10 +250,14 @@ address {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--cubic-function);
 }
-
-.contacts-nav {
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .contacts-nav {
+    display: flex;
+    margin-left: auto;
+  }
+  .contacts-nav .item + .item {
+    margin-left: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -259,10 +265,6 @@ address {
     flex-direction: column;
     align-items: flex-end;
   }
-}
-
-.contacts-nav .item + .item {
-  margin-left: 40px;
 }
 
 .contact:hover,
