@@ -769,15 +769,17 @@ address {
 
 @media screen and (min-width: 768px) {
   .footer-list {
+    position: relative;
     flex-direction: row;
-    justify-content: center;
-    gap: 120px 80px;
-    padding: 100px 0 100px 0;
+    justify-content: left;
+    gap: 24px;
+    padding: 96px 0 248px 108px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-list {
+    position: static;
     flex-direction: row;
     gap: 120px 80px;
     padding: 100px 0 100px 0;
@@ -794,7 +796,8 @@ address {
 
 @media screen and (min-width: 768px) {
   .declaration {
-    /* width: 264px; */
+    max-width: 264px;
+    width: 100%;
     margin-top: 0;
     margin-bottom: 0px;
     text-align: left;
@@ -803,7 +806,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .declaration {
-    /* width: 264px; */
+    max-width: 264px;
     margin-top: 16px;
   }
 }
@@ -852,7 +855,7 @@ address {
   border-radius: 20px;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--normal-button-color);
   transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--cubic-function);
@@ -875,20 +878,24 @@ address {
   width: 100%;
   margin-top: 72px;
   text-align: center;
-  /* margin: 0 auto; */
 }
 
 @media screen and (min-width: 768px) {
   .footer-subscribe-wrapper {
-    display: inline-flex;
-    margin-bottom: 0;
-    margin-top: 0;
+    position: absolute;
+    bottom: 96px;
+    left: 108px;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: flex-end;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-subscribe-wrapper {
+    position: static;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -922,6 +929,16 @@ address {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-subscribe-input {
+    max-width: 264px;
+  }
+  .footer-subscribe-label {
+    max-width: 264px;
+    margin-right: 0;
+  }
+}
+
 .footer-sibscribe-input:placeholder {
   color: white;
 }
@@ -939,6 +956,12 @@ address {
   margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-subscribe-button {
+    margin-left: 0;
+  }
 }
 
 .footer-send-icon {
