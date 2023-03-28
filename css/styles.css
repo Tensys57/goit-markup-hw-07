@@ -124,7 +124,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .page-header {
-    /* background-color: var(--primary-bg-color); */
+    background-color: var(--primary-bg-color);
     border-bottom: 1px solid var(--secondary-bg-colour);
   }
 }
@@ -138,10 +138,10 @@ address {
 @media screen and (min-width: 768px) {
   .mobile-menu-open-button {
     display: none;
-    /* background-color: transparent;
+    background-color: transparent;
     border: none;
     padding: 0;
-    line-height: 0; */
+    line-height: 0;
   }
 
   .burger-menu-icon {
@@ -384,9 +384,9 @@ address {
   .hero {
     background-image: url("../images/people-office-tablet.jpg");
   }
-  @media (min-device-pixel-ratio: 3),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 3dppx) {
+    (min-resolution: 2dppx) {
     .hero {
       background-image: url("../images/people-office-tablet@2x.jpg");
     }
@@ -1218,12 +1218,13 @@ address {
   cursor: pointer;
 }
 
-/* .modal-checkbox-agreement:checked + .modal-checkbox-label::before { */
-  /* background-color: var(--hover-button-bg); */
-  /* background-image: url("../images/icon-check.svg"); */
-  /* background-repeat: no-repeat; */
-  /* background-position: 50% 50%; */
-/* } */
+ .modal-checkbox-agreement:checked + .modal-checkbox-label::before {
+  background-color: var(--hover-button-bg);
+  background-image: url("../images/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+} 
+
 
 .modal-checkbox-agreement:focus + .modal-checkbox-label::before {
   border-color: var(--normal-button-color);
