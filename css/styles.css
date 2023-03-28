@@ -259,8 +259,6 @@ address {
   }
 } */
 
-
-
 .contacts-nav .item + .item {
   margin-left: 40px;
 }
@@ -365,7 +363,7 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url("../images/people-office.jpg");
   background-repeat: no-repeat;
   max-width: 1440px;
   background-size: cover;
@@ -377,19 +375,20 @@ address {
 @media screen and (max-width: 480px) {
   .hero {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-      url("../images/people-office-mobile.jpg);
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-mobile.jpg");
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image:  linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ), url("../images/people-office-mobile@2x.jpg");
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/people-office-mobile@2x.jpg");
     }
   }
 }
@@ -398,9 +397,9 @@ address {
   .hero {
     max-width: 768px;
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url("../images/people-office-tablet.jpg");
   }
   @media (min-device-pixel-ratio: 2),
@@ -408,9 +407,10 @@ address {
     (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ), url("../images/people-office-tablet@2x.jpg");
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/people-office-tablet@2x.jpg");
     }
   }
 }
@@ -418,18 +418,20 @@ address {
 @media screen and (min-width: 769px) {
   .hero {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ), url("../images/people-office.jpg");
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office.jpg");
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ), url("../images/people-office@2x.jpg");
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/people-office@2x.jpg");
     }
   }
 }
